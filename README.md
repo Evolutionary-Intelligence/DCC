@@ -26,3 +26,16 @@ Differentiable Cross-Entropy Method | https://github.com/Evolutionary-Intelligen
 Diagonal Decoding Covariance Matrix Adaptation | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/ddcma.py
 Derandomized Self-Adaptation Evolution Strategy | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/dsaes.py
 Dynamic Smoothing Cross-Entropy Method | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/cem/dscem.py
+Exact Natural Evolution Strategy | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/nes/enes.py
+Enhanced Simulated Annealing | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/sa/esa.py
+Fast Covariance Matrix Adaptation Evolution Strategy | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/fcmaes.py
+Adaptive Differential Evolution | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/de/jade.py
+Limited-Memory Covariance Matrix Adaptation | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/lmcma.py
+Limited-Memory Covariance Matrix Adaptation Evolution Strategy | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/lmcmaes.py
+Limited-Memory Matrix Adaptation Evolution Strategy | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/lmmaes.py
+Matrix Adaptation Evolution Strategy | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/maes.py
+Mixture Model-based Evolution Strategy | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/mmes.py
+(1+1)-Active-CMA-ES 2010 | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/opoa2010.py
+(1+1)-Active-CMA-ES 2015 | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/opoa2015.py
+(1+1)-Cholesky-CMA-ES 2006 | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/opoc2006.py
+(1+1)-Cholesky-CMA-ES 2009 | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/opoc2009.py
