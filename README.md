@@ -56,3 +56,19 @@ Univariate Marginal Distribution Algorithm for normal models | https://github.co
 Linear Covariance Matrix Adaptation | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/vdcma.py
 Projection-based Covariance Matrix Adaptation | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/vkdcma.py
 Exponential Natural Evolution Strategies | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/nes/xnes.py
+
+# Configurations of Clustering Computing Platform
+
+Use the following three `bash` commands to obtain the information of each slave node in the clustering computing platform:
+
+1. Use `lsb_release -a` to obtain **operation system (OS)** information,
+2. Use `cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c` to obtain **CPU** information,
+3. Use `free -mh` to obtain **memory** information.
+
+OS | CPU | Memory
+-- | --- | ------
+Ubuntu 16.04 LTS | 40  Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz | 62G
+Ubuntu 16.04 LTS | 40  Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz | 62G
+Ubuntu 16.04 LTS | 40  Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz | 62G
+Ubuntu 16.04 LTS | 40  Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz | 62G
+Ubuntu 16.04 LTS | 40  Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz | 62G
