@@ -39,3 +39,20 @@ Mixture Model-based Evolution Strategy | https://github.com/Evolutionary-Intelli
 (1+1)-Active-CMA-ES 2015 | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/opoa2015.py
 (1+1)-Cholesky-CMA-ES 2006 | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/opoc2006.py
 (1+1)-Cholesky-CMA-ES 2009 | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/opoc2009.py
+Pure Random Search | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/rs/prs.py
+Rank-One Evolution Strategy | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/r1es.py
+Rank-One Natural Evolution Strategies | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/nes/r1nes.py
+Rechenberg's (1+1)-Evolution Strategy with 1/5th success rule | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/res.py
+Random (stochastic) Hill Climber | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/rs/rhc.py
+Rank-M Evolution Strategy | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/rmes.py
+Random-Projection Estimation of Distribution Algorithm | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/eda/rpeda.py
+Standard Cross-Entropy Method | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/cem/scem.py
+Separable Covariance Matrix Adaptation Evolution Strategy | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/sepcmaes.py
+Separable Natural Evolution Strategies | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/nes/snes.py
+Standard Particle Swarm Optimizer with a global topology | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/pso/spso.py
+Standard Particle Swarm Optimizer with a Local (ring) topology | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/pso/spsol.py
+Simple Random Search | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/rs/srs.py
+Univariate Marginal Distribution Algorithm for normal models | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/eda/umda.py
+Linear Covariance Matrix Adaptation | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/vdcma.py
+Projection-based Covariance Matrix Adaptation | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/vkdcma.py
+Exponential Natural Evolution Strategies | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/nes/xnes.py
