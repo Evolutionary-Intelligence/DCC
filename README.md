@@ -72,3 +72,8 @@ Ubuntu 16.04 LTS | 40  Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz | 62G
 Ubuntu 16.04 LTS | 40  Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz | 62G
 Ubuntu 16.04 LTS | 40  Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz | 62G
 Ubuntu 16.04 LTS | 40  Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz | 62G
+Ubuntu 16.04 LTS | 40  Intel(R) Xeon(R) CPU E5-2640 v4 @ 2.40GHz | 62G
+Ubuntu 16.04 LTS | 40  Intel(R) Xeon(R) CPU E5-2640 v4 @ 2.40GHz | 62G
+Ubuntu 16.04 LTS | 40  Intel(R) Xeon(R) CPU E5-2640 v4 @ 2.40GHz | 32G
+Ubuntu 16.04 LTS | 40  Intel(R) Xeon(R) CPU E5-2640 v4 @ 2.40GHz | 32G
+Ubuntu 16.04 LTS | 40  Intel(R) Xeon(R) CPU E5-2640 v4 @ 2.40GHz | 32G
