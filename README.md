@@ -18,6 +18,7 @@ Cooperative Coevolving Particle Swarm Optimizer | https://github.com/Evolutionar
 Classic Differential Evolution | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/de/cde.py
 Comprehensive Learning Particle Swarm Optimizer | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/pso/clpso.py
 Covariance Matrix Adaptation Evolution Strategy | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/cmaes.py
+CoOperative CO-evolutionary Covariance Matrix Adaptation | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/cc/cocma.py
 COmposite Differential Evolution | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/de/code.py
 CoOperative co-Evolutionary Algorithm | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/cc/coea.py
 Corana et al.' Simulated Annealing | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/sa/csa.py
