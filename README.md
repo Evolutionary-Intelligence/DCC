@@ -79,3 +79,33 @@ Ubuntu 16.04 LTS | 40  Intel(R) Xeon(R) CPU E5-2640 v4 @ 2.40GHz | 62G
 Ubuntu 16.04 LTS | 40  Intel(R) Xeon(R) CPU E5-2640 v4 @ 2.40GHz | 32G
 Ubuntu 16.04 LTS | 40  Intel(R) Xeon(R) CPU E5-2640 v4 @ 2.40GHz | 32G
 Ubuntu 16.04 LTS | 40  Intel(R) Xeon(R) CPU E5-2640 v4 @ 2.40GHz | 32G
+
+* Increase the limits of open files (by default, 1024) to e.g. 500000 for successful runs:
+
+```bash
+$ ulimit -n
+$ sudo vi /etc/security/limits.conf
+```
+
+* Make sure that all slave nodes use the same versions of all three Python libraries (NumPy, SciPy, and Ray):
+
+```bash
+$ pip install numpy  # to use the virtual environment to install depended libraries
+$ pip install scipy
+$ pip install ray
+$ export RAY_memory_monitor_refresh_ms=0
+```
+
+* Choose one node as the master node:
+
+```bash
+$ ray start --head
+$ ray status
+
+$ ssh -L 8265:0.0.0.0:8265 <NAME>@<IP-ADDRESS>  # for local access to the remote clustering computing platform
+# <NAME> and <IP-ADDRESS> are replaced by user name and IP of the master node
+$ python  # local
+>>> import ray
+>>> ray.init(include_dashboard=True)
+# open http://localhost:8265/ in the browser for status of the used clustering computing platform
+```
