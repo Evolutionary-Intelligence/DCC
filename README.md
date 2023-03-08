@@ -21,6 +21,7 @@ Covariance Matrix Adaptation Evolution Strategy | https://github.com/Evolutionar
 CoOperative CO-evolutionary Covariance Matrix Adaptation | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/cc/cocma.py
 COmposite Differential Evolution | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/de/code.py
 CoOperative co-Evolutionary Algorithm | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/cc/coea.py
+CoOperative SYnapse NEuroevolution | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/cc/cosyne.py
 Corana et al.' Simulated Annealing | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/sa/csa.py
 Cumulative Step-size self-Adaptation Evolution Strategy | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/es/csaes.py
 Differentiable Cross-Entropy Method | https://github.com/Evolutionary-Intelligence/pypop/blob/main/pypop7/optimizers/cem/dcem.py
