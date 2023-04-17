@@ -1,6 +1,6 @@
 # DCC: Distributed Cooperative Coevolution (powered by LM-CMA/CMA-ES under the recently proposed [Multi-Level Learning](https://www.pnas.org/doi/10.1073/pnas.2120037119) framework).
 
-This is a companion website for the paper **Cooperative Coevolution for Non-Separable Large-Scale Black-Box Optimization: Convergence Analyses and Distributed Accelerations**, which has been submitted to [IEEE-TCYB](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036) (*under review*).
+This is a companion website for the paper **Cooperative Coevolution for Non-Separable Large-Scale Black-Box Optimization: Convergence Analyses and Distributed Accelerations**, which has been submitted to [IEEE-TNNLS](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385) (*under review*).
 
 All the source code and data (as well as [online Supplementary Materials](https://github.com/Evolutionary-Intelligence/DCC/blob/main/SupplementaryMaterials.pdf)) involved in this paper are presented here to ensure **repeatability**.
 
