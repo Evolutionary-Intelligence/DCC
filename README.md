@@ -2,7 +2,7 @@
 
 This is a companion website for the paper **Cooperative Coevolution for Non-Separable Large-Scale Black-Box Optimization: Convergence Analyses and Distributed Accelerations** (*under review*).
 
-All the source code and data (as well as [online Supplementary Materials](https://github.com/Evolutionary-Intelligence/DCC/blob/main/SupplementaryMaterials.pdf)) involved in this paper are presented here to ensure **repeatability**.
+All the source code and data involved in this paper are presented here to ensure **repeatability**.
 
 ## All Baseline Optimizers
 
