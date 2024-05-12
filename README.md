@@ -1,12 +1,12 @@
 # DCC: Distributed Cooperative Coevolution (powered by LM-CMA/CMA-ES under the recently proposed [Multi-Level Learning](https://www.pnas.org/doi/10.1073/pnas.2120037119) framework).
 
-This is a companion website for the paper **Cooperative Coevolution for Non-Separable Large-Scale Black-Box Optimization: Convergence Analyses and Distributed Accelerations** (*under review*).
+This is an online companion website for the paper **Cooperative Coevolution for Non-Separable Large-Scale Black-Box Optimization: Convergence Analyses and Distributed Accelerations** (*under review*).
 
-All the source code and data involved in this paper are presented here to ensure **repeatability**.
+All the Python source code and data involved in this paper are presented here to ensure **repeatability** and **possible improvements**.
 
-## All Baseline Optimizers
+## Baselines of Black-Box Optimizers (BBO) Used in our Paper
 
-The below optimizers are given in **alphabetical** order. See their references according to their **open-source** code files.
+All of the below BBO are given in **alphabetical** order. Please refer to their references for details according to their **open-source** code files.
 
 Optimizer | Source Code
 --------- | -----------
