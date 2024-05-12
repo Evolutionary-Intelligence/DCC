@@ -1,0 +1,12 @@
+* experiment: 5 ***:
+  * function: different_powers:
+    runtime: 1.00509e+04.
+  * function: schwefel221:
+    runtime: 1.06396e+04.
+  * function: step:
+    runtime: 7.70992e+02.
+  * function: rosenbrock:
+    runtime: 1.06315e+04.
+  * function: schwefel12:
+    runtime: 1.06745e+04.
+*** Total runtime: 4.27681e+04 ***.
