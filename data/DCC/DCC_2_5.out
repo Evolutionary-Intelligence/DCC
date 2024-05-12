@@ -1,0 +1,96 @@
+* experiment: 2 ***:
+  * function: sphere:
+    runtime: 5.81986e+02.
+  * function: cigar:
+    runtime: 1.53886e+03.
+  * function: discus:
+    runtime: 2.29910e+03.
+  * function: cigar_discus:
+    runtime: 1.34914e+03.
+  * function: ellipsoid:
+    runtime: 1.06389e+04.
+  * function: different_powers:
+    runtime: 9.62733e+03.
+  * function: schwefel221:
+    runtime: 1.08090e+04.
+  * function: step:
+    runtime: 5.76563e+02.
+  * function: rosenbrock:
+    runtime: 1.07625e+04.
+  * function: schwefel12:
+    runtime: 1.07047e+04.
+* experiment: 3 ***:
+  * function: sphere:
+    runtime: 5.75751e+02.
+  * function: cigar:
+    runtime: 1.34095e+03.
+  * function: discus:
+    runtime: 2.30938e+03.
+  * function: cigar_discus:
+    runtime: 1.34517e+03.
+  * function: ellipsoid:
+    runtime: 1.07100e+04.
+  * function: different_powers:
+    runtime: 9.94042e+03.
+  * function: schwefel221:
+    runtime: 1.08118e+04.
+  * function: step:
+    runtime: 1.08020e+04.
+  * function: rosenbrock:
+    runtime: 1.07954e+04.
+  * function: schwefel12:
+    runtime: 1.07257e+04.
+* experiment: 4 ***:
+  * function: sphere:
+    runtime: 5.76316e+02.
+  * function: cigar:
+    runtime: 1.33994e+03.
+  * function: discus:
+    runtime: 2.29154e+03.
+  * function: cigar_discus:
+    runtime: 1.34108e+03.
+  * function: ellipsoid:
+    runtime: 1.08041e+04.
+  * function: different_powers:
+    runtime: 9.64414e+03.
+  * function: schwefel221:
+    runtime: 1.06321e+04.
+  * function: step:
+    runtime: 7.65364e+02.
+  * function: rosenbrock:
+    runtime: 1.08119e+04.
+  * function: schwefel12:
+    runtime: 1.07320e+04.
+* experiment: 5 ***:
+  * function: sphere:
+    runtime: 7.65417e+02.
+  * function: cigar:
+    runtime: 1.34730e+03.
+  * function: discus:
+    runtime: 2.30426e+03.
+  * function: cigar_discus:
+    runtime: 1.34110e+03.
+  * function: ellipsoid:
+    runtime: 1.08040e+04.
+  * function: different_powers:
+Traceback (most recent call last):
+  File "run_experiments.py", line 177, in <module>
+    experiments.run(Optimizer)
+  File "run_experiments.py", line 71, in run
+    experiment.run(optimizer)
+  File "run_experiments.py", line 44, in run
+    results = solver.optimize()
+  File ".../pypoplib/d_es.py", line 101, in optimize
+    results = ray.get(ray_results)  # to synchronize (for simplicity)
+  File ".../lib/python3.8/site-packages/ray/_private/client_mode_hook.py", line 105, in wrapper
+    return func(*args, **kwargs)
+  File ".../lib/python3.8/site-packages/ray/_private/worker.py", line 2311, in get
+    raise value
+ray.exceptions.RayActorError: The actor died unexpectedly before finishing this task.
+	class_name: MMES
+	actor_id: ...
+	pid: ...
+	namespace: ...
+	ip: ...
+The actor is dead because its worker process has died. Worker exit type: SYSTEM_ERROR Worker exit detail: Worker unexpectedly exits with a connection error code 2. End of file. There are some potential root causes. (1) The process is killed by SIGKILL by OOM killer due to high memory usage. (2) ray stop --force is called. (3) The worker is crashed unexpectedly due to SIGSEGV or other unexpected errors.
+The actor never ran - it was cancelled before it started running.
