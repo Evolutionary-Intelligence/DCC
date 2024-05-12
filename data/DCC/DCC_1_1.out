@@ -1,0 +1,22 @@
+* experiment: 1 ***:
+  * function: sphere:
+    runtime: 5.76378e+02.
+  * function: cigar:
+    runtime: 1.34159e+03.
+  * function: discus:
+    runtime: 2.10959e+03.
+  * function: cigar_discus:
+    runtime: 1.14800e+03.
+  * function: ellipsoid:
+    runtime: 1.07793e+04.
+  * function: different_powers:
+    runtime: 9.83548e+03.
+  * function: schwefel221:
+    runtime: 1.07989e+04.
+  * function: step:
+    runtime: 5.81679e+02.
+  * function: rosenbrock:
+    runtime: 1.07932e+04.
+  * function: schwefel12:
+    runtime: 1.07151e+04.
+*** Total runtime: 5.86798e+04 ***.
