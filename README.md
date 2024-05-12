@@ -87,7 +87,7 @@ $ ulimit -n
 $ sudo vi /etc/security/limits.conf
 ```
 
-* Make sure that all slave nodes use the same versions of all three Python libraries (NumPy, SciPy, and Ray):
+* Make sure that all slave nodes use the same versions of all three Python libraries (**NumPy**, **SciPy**, and **Ray**):
 
 ```bash
 $ pip install numpy  # to use the virtual environment to install depended libraries
