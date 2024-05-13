@@ -1,0 +1,29 @@
+* experiment: 2 ***:
+  * function: loss_svm_qar:
+    runtime: 1.06724e+04.
+* experiment: 3 ***:
+  * function: loss_svm_qar:
+    runtime: 1.06775e+04.
+* experiment: 4 ***:
+  * function: loss_svm_qar:
+Traceback (most recent call last):
+  File "*.py", line 156, in <module>
+    experiments.run(Optimizer)
+  File "*.py", line 144, in run
+    experiment.run(optimizer)
+  File "*.py", line 116, in run
+    results = solver.optimize(problem['fitness_function'], ray.put({'x': x, 'y': y}))  # to run the optimization/search/evolution process
+  File "*/pypoplib/d_es.py", line 89, in optimize
+    results = ray.get(ray_results)  # to synchronize (for simplicity)
+  File "*/lib/python3.8/site-packages/ray/_private/client_mode_hook.py", line 105, in wrapper
+    return func(*args, **kwargs)
+  File "*/lib/python3.8/site-packages/ray/_private/worker.py", line 2382, in get
+    raise value
+ray.exceptions.RayActorError: The actor died unexpectedly before finishing this task.
+	class_name: MMES
+	actor_id: *
+	pid: *
+	namespace: *
+	ip: *
+The actor is dead because its worker process has died. Worker exit type: SYSTEM_ERROR Worker exit detail: Worker unexpectedly exits with a connection error code 2. End of file. There are some potential root causes. (1) The process is killed by SIGKILL by OOM killer due to high memory usage. (2) ray stop --force is called. (3) The worker is crashed unexpectedly due to SIGSEGV or other unexpected errors.
+The actor never ran - it was cancelled before it started running.
