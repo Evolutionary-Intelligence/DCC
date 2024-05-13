@@ -1,0 +1,7 @@
+* experiment: 4 ***:
+  * function: loss_svm_qar:
+    runtime: 1.06678e+04.
+* experiment: 5 ***:
+  * function: loss_svm_qar:
+    runtime: 1.06784e+04.
+*** Total runtime: 2.13462e+04 ***.
