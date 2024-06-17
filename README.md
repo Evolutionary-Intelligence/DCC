@@ -112,3 +112,9 @@ $ python  # local
 
 ## Guideline for Hyper-Parameter Settings
 
+* `n_islands`: the total number of islands to be run in parallel (`int`, must `> 0`)
+  * To maximize the level of parallelism while avoiding disputes with OS management programs, it is suggested to be set as the total number of all available (logical) CPU cores minus the total number of worker nodes at most.
+* `inner_max_runtime`: runtime of each island within each isolation time (float, must `> 0.0`)
+  * By default: `3.0 * 60` (seconds).
+* `max_runtime`: maximal wall-clock time to be run in the distributed computing platform (float, must > 0.0)
+  * This hyper-parameter is problem-dependent, depending on the maximally acceptable time of the user obviously.
