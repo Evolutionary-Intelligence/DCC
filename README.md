@@ -1,6 +1,6 @@
 # DCC: Distributed Cooperative Coevolution (powered by LM-CMA/CMA-ES under the recently proposed [Multi-Level Learning](https://www.pnas.org/doi/10.1073/pnas.2120037119) framework).
 
-This is an online companion website for the paper **Cooperative Coevolution for Non-Separable Large-Scale Black-Box Optimization: Convergence Analyses and Distributed Accelerations** (*under review*).
+This is an online companion website for the paper **Cooperative Coevolution for Non-Separable Large-Scale Black-Box Optimization: Convergence Analyses and Distributed Accelerations** (*under review, submitted to Applied Soft Computing*).
 
 All the Python source code and data involved in this paper are presented here to ensure **repeatability** and **possible improvements**.
 
@@ -109,3 +109,6 @@ $ python  # local
 >>> ray.init(include_dashboard=True)
 # open http://localhost:8265/ in the browser for status of the used clustering computing platform
 ```
+
+## Guideline for Hyper-Parameter Settings
+
