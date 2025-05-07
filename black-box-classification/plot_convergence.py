@@ -7,6 +7,7 @@ import os
 import sys
 import pickle5 as pickle
 
+import matplotlib
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -15,9 +16,15 @@ from pypoplib import optimizer
 sys.modules['optimizer'] = optimizer  # for `pickle`
 
 
-sns.set_theme(style='darkgrid', rc={'figure.figsize':(5, 5)})
-plt.rcParams['font.family'] = 'Times New Roman'
-plt.rcParams['font.size'] = '10'
+sns.set_theme(style='darkgrid')
+font_size = 10
+font_family = 'Times New Roman'
+matplotlib.rcParams['font.family'] = 'sans-serif'
+matplotlib.rcParams['font.sans-serif'] = 'SimSun'
+matplotlib.rcParams['axes.unicode_minus'] = False
+matplotlib.rcParams['font.size'] = font_size  # 对应5号字体
+prop_cycle = plt.rcParams['axes.prop_cycle']
+colors = prop_cycle.by_key()['color']
 
 
 def read_pickle(s, f, i):
@@ -31,7 +38,10 @@ if __name__== '__main__':
     s = ['DCC',
          'SCEM', 'COCMA', 'RPEDA', 'SHADE',
          'VKDCMA', 'R1NES', 'LMCMA', 'CLPSO']
-
+    markers = ['o', 'v', '^', '<', '>',
+               'd', 's', 'p', 'P', '*',
+               'h', 'H', '+', 'x', 'X',
+               'D', '8']
     time, fitness = [], []
     for i in range(len(s)):
         time.append([])
@@ -54,13 +64,29 @@ if __name__== '__main__':
         for j in range(n_trials):
             fit.append(fitness[i][j][-1])
         order.append(np.argsort(fit)[2])  # 2-> median
-    plt.figure(figsize=(6, 6))
+    plt.figure(figsize=(4, 4))
     plt.yscale('log')
     for i, ss in enumerate(s):
-        plt.plot(time[i][order[i]], fitness[i][order[i]])
-    plt.xlabel('Running Time (Seconds)')
-    plt.ylabel('Fitness (to be Minimized)')
-    plt.title('SVM')
-    plt.legend(s, loc='best')
+        plt.plot(time[i][order[i]], fitness[i][order[i]],
+                 c=colors[i])
+        plt.plot(time[i][order[i]][int(len(time[i][order[i]])/5)],
+                 fitness[i][order[i]][int(len(time[i][order[i]])/5)],
+                 c=colors[i], marker=markers[i], markersize=7)
+        plt.plot(time[i][order[i]][int(len(time[i][order[i]])*2/5)],
+                 fitness[i][order[i]][int(len(time[i][order[i]])*2/5)],
+                 c=colors[i], marker=markers[i], markersize=7)
+        plt.plot(time[i][order[i]][int(len(time[i][order[i]])*3/5)],
+                 fitness[i][order[i]][int(len(time[i][order[i]])*3/5)],
+                 c=colors[i], marker=markers[i], markersize=7)
+        plt.plot(time[i][order[i]][int(len(time[i][order[i]])*4/5)],
+                 fitness[i][order[i]][int(len(time[i][order[i]])*4/5)],
+                 c=colors[i], label=ss, marker=markers[i], markersize=7)
+    plt.xlabel('运行时间（单位：秒）', fontsize=font_size)
+    plt.ylabel('适应值（最小化）', fontsize=font_size)
+    plt.xticks(fontsize=font_size, fontfamily=font_family)
+    plt.yticks(fontsize=font_size, fontfamily=font_family)
+    plt.title('高维黑箱分类任务', fontsize=font_size)
+    plt.legend(loc='best', prop = {'size' : font_size,
+                                   'family': font_family})
     plt.savefig('SVM.png', dpi=700, bbox_inches='tight')
     plt.show()
